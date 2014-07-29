@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  pading: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+.hero-wrap {
+  background-position: cover;
+  background: url(../img/bg.jpg) center no-repeat;
+}
+
+.icon {
+  padding: 60px;
+  padding-left: 100px;
+  float: left;
+}
+
+i {
+  color: #ededed;
+  font-size: 21px;
+}
+i:hover {
+  color: white;
+}
+
+nav {
+  padding: 60px;
+  float: right;
+}
+
+h1, p {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 38px;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.h-wrap {
+  clear: both;
+  padding-bottom: 310px;
+  padding-top: 120px;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 700;
+  padding-right: 40px;
+  text-decoration: none;
+  color: #ededed;
+}
+a:hover {
+  color: white;
+}
