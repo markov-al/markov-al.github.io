@@ -38,6 +38,12 @@
 	.offers-cta{
 		margin: 50px auto auto auto;
 	}
+	.offers-cta{
+		width: 90%;
+	}
+	.offers-cta .wrapper .tab_content{
+		width: 100%;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -45,25 +51,23 @@
 	header{
 		min-height: 800px; 
 	}
+	.offers-cta .wrapper .tab_content, .offers-cta .wrapper .tab_content .tab_item .btn{
+		width: 100%;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 430px) {
 	header{
-		min-height: 900px; 
+		min-height: 1100px; 
 	}
 	.heading{
 		margin-top: 40px;
 	}
-	.offers-cta{
-		width: 90%;
-	}
-	.offers-cta .wrapper .tabs .tab, .offers-cta .wrapper .tabs .tab.active::before{
+	/*.offers-cta .wrapper .tabs .tab, .offers-cta .wrapper .tabs .tab.active::before{
 		width: 159px;
-	}
-	.offers-cta .wrapper .tab_content, .offers-cta .wrapper .tab_content .tab_item .btn{
-		width: 100%;
-	}
+	}*/
+	
 }
 
 
