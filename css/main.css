@@ -58,7 +58,7 @@ header {
   margin: 0; }
 
 .offers-cta {
-  width: 600px;
+  width: 450px;
   margin-top: 45px;
   position: relative; }
   .offers-cta .wrapper .tabs .tab {
@@ -93,16 +93,16 @@ header {
         .offers-cta .wrapper .tabs .tab.active p:hover {
           border: none; }
     .offers-cta .wrapper .tabs .tab p {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
       display: inline; }
       .offers-cta .wrapper .tabs .tab p:hover {
-        border-bottom: 1px solid #4a4a4a; }
+        border-bottom: 1px dashed #4a4a4a; }
   .offers-cta .wrapper .tab_content {
     display: block;
     position: absolute;
     top: 45px;
-    width: 600px;
-    padding: 30px 40px;
+    width: 450px;
+    padding: 30px 30px;
     background: white;
     border-radius: 10px; }
     .offers-cta .wrapper .tab_content .tab_item p {
@@ -111,7 +111,7 @@ header {
       font-size: 18px; }
     .offers-cta .wrapper .tab_content .tab_item .btn {
       display: block;
-      width: 50%;
+      width: 60%;
       height: 52px;
       border-radius: 5px;
       background: #ff9500;

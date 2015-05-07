@@ -1,6 +1,6 @@
 /*==========  Desktop First Method  ==========*/
 
-/* Large Devices, Wide Screens */
+/* Large Devices, Wide Scre	ens */
 @media only screen and (max-width : 1200px) {
 
 }
@@ -30,19 +30,19 @@
 		line-height: 1.2em;
 		margin-bottom: 15px;
 	}
-
 	.heading h2 {
 		font-size: 22px;
 		text-align: center;
 	}
 	.offers-cta{
-		margin: 50px auto auto auto;
-	}
-	.offers-cta{
-		width: 90%;
-	}
+		margin: 50px auto auto auto;/*
+		width: 90%;*/
+	}/*
 	.offers-cta .wrapper .tab_content{
 		width: 100%;
+	}*/
+	.offers-cta .wrapper .tab_content .tab_item .btn{
+		margin: auto;
 	}
 }
 
@@ -51,9 +51,7 @@
 	header{
 		min-height: 800px; 
 	}
-	.offers-cta .wrapper .tab_content, .offers-cta .wrapper .tab_content .tab_item .btn{
-		width: 100%;
-	}
+	
 }
 
 /* Custom, iPhone Retina */
@@ -64,9 +62,15 @@
 	.heading{
 		margin-top: 40px;
 	}
-	/*.offers-cta .wrapper .tabs .tab, .offers-cta .wrapper .tabs .tab.active::before{
-		width: 159px;
-	}*/
+	.offers-cta{
+		width: 90%;
+	}
+	.offers-cta .wrapper .tab_content, .offers-cta .wrapper .tab_content .tab_item .btn{
+		width: 100%;
+	}
+	.offers-cta .wrapper .tab_content {
+		padding: 20px;
+	}
 	
 }
 
