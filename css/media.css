@@ -34,42 +34,34 @@
 		font-size: 22px;
 		text-align: center;
 	}
-	.offers-cta{
-		margin: 50px auto auto auto;/*
-		width: 90%;*/
-	}/*
-	.offers-cta .wrapper .tab_content{
-		width: 100%;
-	}*/
-	.offers-cta .wrapper .tab_content .tab_item .btn{
+	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn {
 		margin: auto;
 	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 571px) {
-	header{
-		min-height: 800px; 
+	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content {
+		width: 100%;
 	}
-	
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 430px) {
-	header{
+	/*header{
 		min-height: 1100px; 
-	}
+	}*/
 	.heading{
 		margin-top: 40px;
 	}
-	.offers-cta{
-		width: 90%;
+	.offers-cta .col-md-12 .wrapper .tab_content{
+		padding: 30px;
 	}
-	.offers-cta .wrapper .tab_content, .offers-cta .wrapper .tab_content .tab_item .btn{
+	.offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn{
 		width: 100%;
 	}
-	.offers-cta .wrapper .tab_content {
-		padding: 20px;
+	.offers-cta .col-md-12 .myclearfix {
+		height: 400px;
 	}
 	
 }
