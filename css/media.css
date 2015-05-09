@@ -2,18 +2,30 @@
 
 /* Large Devices, Wide Scre	ens */
 @media only screen and (max-width : 1200px) {
-
+	.profy-left i {
+		margin-left: 20px;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	/* section.second .container .row .col-md-8 .text{
+		max-width: 344px;
+	}*/
+	section.second .container .row form {
+		max-width: 350px;
+		margin: auto;
+	}
+	.profy-left i {
+		margin-left: 40px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	header{
 		min-height: 750px; 
+		margin: auto;
 	}
 
 	.logo, .phone {
@@ -37,6 +49,12 @@
 	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn {
 		margin: auto;
 	}
+	section.second .container .row form {
+		max-width: 350px;
+	}
+	.profy-left i {
+		margin-left: 20px;
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -44,26 +62,40 @@
 	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content {
 		width: 100%;
 	}
+	section.second .container .row form {
+		width: 350px;
+	}
+	.profy-left i {
+		margin-left: 0;
+	}
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 430px) {
-	/*header{
-		min-height: 1100px; 
-	}*/
 	.heading{
 		margin-top: 40px;
 	}
 	.offers-cta .col-md-12 .wrapper .tab_content{
 		padding: 30px;
 	}
-	.offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn{
+	.offers-cta .col-md-12 .myclearfix {
+		height: 480px;
+	}
+	section.second .container .row form { 
 		width: 100%;
 	}
-	.offers-cta .col-md-12 .myclearfix {
-		height: 400px;
+	h1 {
+		font-size: 30px;
 	}
-	
+	.profy-left i {
+		font-size: 34px;
+	}
+}
+/*iPhone 4*/
+@media only screen and (max-width : 320px){
+	.offers-cta .col-md-12 .myclearfix {
+		height: 550px;
+	}
 }
 
 

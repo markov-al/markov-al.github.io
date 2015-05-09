@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: "Open Sans ", sans-serif;
   font-weight: normal;
@@ -8,7 +9,8 @@ body {
   -webkit-font-smoothing: antialised; }
 
 h1 {
-  font-size: 40px; }
+  font-size: 40px;
+  margin: 0; }
 
 h2 {
   font-size: 24px;
@@ -18,8 +20,7 @@ header {
   min-height: 100px;
   padding-bottom: 60px;
   background: url("../img/header-bg.png") top center/cover;
-  color: white;
-  padding-bottom: 60px; }
+  color: white; }
 
 .top-line {
   margin-top: 40px; }
@@ -96,7 +97,10 @@ header {
             border: none; }
       .offers-cta .col-md-12 .wrapper .tabs .tab p {
         border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-        display: inline; }
+        display: inline;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
         .offers-cta .col-md-12 .wrapper .tabs .tab p:hover {
           border-bottom: 1px dashed #4a4a4a; }
     .offers-cta .col-md-12 .wrapper .tab_content {
@@ -110,10 +114,18 @@ header {
       .offers-cta .col-md-12 .wrapper .tab_content .tab_item p {
         margin: 0 0 28px 0;
         color: #4a4a4a;
-        font-size: 18px; }
+        font-size: 18px;
+        position: relative;
+        margin-left: 40px; }
+      .offers-cta .col-md-12 .wrapper .tab_content .tab_item .li_calendar:before, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .li_bubble:before, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .li_lab:before, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .li_pen:before, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .li_bulb:before, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .li_clip:before {
+        position: absolute;
+        top: 3px;
+        left: -35px;
+        font-size: 22px;
+        color: #959595; }
       .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn {
         display: block;
-        width: 60%;
+        width: 240px;
         height: 52px;
         border-radius: 5px;
         background: #ff9500;
@@ -123,14 +135,102 @@ header {
         line-height: 52px;
         text-align: center;
         -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
         transition: all 0.1s ease-in-out; }
         .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn:hover {
           text-decoration: none;
           background: #ffa423; }
   .offers-cta .col-md-12 .myclearfix {
     display: block;
-    height: 350px;
+    height: 430px;
     text-indent: -9999px; }
+
+section.second {
+  padding: 55px 0; }
+  section.second h1 {
+    text-align: center;
+    color: #5e5e5e;
+    margin-bottom: 50px; }
+  section.second form {
+    background: #f4f4f4;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px; }
+    section.second form h5 {
+      margin: 0 0 25px 0;
+      font-size: 22px;
+      font-weight: 400;
+      color: #5e5e5e;
+      line-height: 20px; }
+    section.second form input {
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 44px;
+      border-radius: 5px;
+      font-size: 18px;
+      padding: 10px;
+      margin-bottom: 25px;
+      position: relative; }
+      section.second form input:focus {
+        border: 2px solid #67bc5c; }
+      section.second form input::-webkit-input-placeholder {
+        font-weight: 300; }
+      section.second form input:-moz-placeholder {
+        font-weight: 300; }
+    section.second form input[name=name]::-webkit-input-placeholder:before {
+      font-family: "linecons";
+      content: "";
+      position: absolute;
+      right: 10px; }
+    section.second form input[name=name]:-moz-placeholder:before {
+      font-family: "linecons";
+      content: "";
+      position: absolute;
+      right: 10px; }
+    section.second form input[name=phone]::-webkit-input-placeholder:before {
+      font-family: "linecons";
+      content: "";
+      position: absolute;
+      right: 10px; }
+    section.second form input[name=phone]:-moz-placeholder:before {
+      font-family: "linecons";
+      content: "";
+      position: absolute;
+      right: 10px; }
+    section.second form .btn {
+      background: #ff9500;
+      color: white;
+      font-size: 18px;
+      font-weight: 600;
+      height: 52px;
+      line-height: 32px;
+      margin: 0;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+      section.second form .btn:hover {
+        text-decoration: none;
+        background: #ffa423; }
+
+.profy-item {
+  margin-bottom: 40px; }
+
+.profy-left i {
+  font-size: 50px;
+  color: #ff9500;
+  margin-left: 40px; }
+
+.profy-right h4 {
+  display: inline-block;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  color: #5e5e5e; }
+.profy-right p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #5e5e5e; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
