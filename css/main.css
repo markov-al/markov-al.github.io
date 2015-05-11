@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Open Sans ", sans-serif;
   font-weight: normal;
@@ -157,7 +156,7 @@ section.second {
     padding: 30px;
     border-radius: 10px; }
     section.second form h5 {
-      margin: 0 0 25px 0;
+      margin: 0 0 30px 0;
       font-size: 22px;
       font-weight: 400;
       color: #5e5e5e;
@@ -170,34 +169,46 @@ section.second {
       border-radius: 5px;
       font-size: 18px;
       padding: 10px;
-      margin-bottom: 25px;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
       section.second form input:focus {
-        border: 2px solid #67bc5c; }
+        box-shadow: #67bc5c 0 0 0 2px;
+        border-radius: 5px; }
       section.second form input::-webkit-input-placeholder {
-        font-weight: 300; }
+        font-weight: 400; }
       section.second form input:-moz-placeholder {
-        font-weight: 300; }
-    section.second form input[name=name]::-webkit-input-placeholder:before {
-      font-family: "linecons";
-      content: "";
-      position: absolute;
-      right: 10px; }
-    section.second form input[name=name]:-moz-placeholder:before {
-      font-family: "linecons";
-      content: "";
-      position: absolute;
-      right: 10px; }
-    section.second form input[name=phone]::-webkit-input-placeholder:before {
-      font-family: "linecons";
-      content: "";
-      position: absolute;
-      right: 10px; }
-    section.second form input[name=phone]:-moz-placeholder:before {
-      font-family: "linecons";
-      content: "";
-      position: absolute;
-      right: 10px; }
+        font-weight: 400; }
+      section.second form input:focus + label, section.second form input.has-value + label {
+        top: -18px;
+        left: 0;
+        font-size: 12px; }
+      section.second form input.is-active + label {
+        color: #67bc5c; }
+    section.second form .input-group {
+      margin-bottom: 30px;
+      position: relative;
+      text-align: left; }
+      section.second form .input-group label {
+        position: absolute;
+        top: calc(50% - 13px);
+        right: 0;
+        bottom: 0;
+        left: 10px;
+        font-size: 18px;
+        color: #959595;
+        pointer-events: none;
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out; }
+      section.second form .input-group i {
+        position: absolute;
+        z-index: 1;
+        font-size: 18px;
+        color: #959595;
+        right: 10px;
+        top: 10px; }
     section.second form .btn {
       background: #ff9500;
       color: white;
@@ -212,6 +223,8 @@ section.second {
       section.second form .btn:hover {
         text-decoration: none;
         background: #ffa423; }
+      section.second form .btn:focus {
+        box-shadow: none; }
 
 .profy-item {
   margin-bottom: 40px; }
