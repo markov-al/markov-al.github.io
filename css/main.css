@@ -18,7 +18,7 @@ h2 {
 header {
   min-height: 100px;
   padding-bottom: 60px;
-  background: url("../img/header-bg.png") top center/cover;
+  background: url("../img/header-bg.png") top right/cover;
   color: white; }
 
 .top-line {
@@ -197,7 +197,7 @@ section.second {
         bottom: 0;
         left: 10px;
         font-size: 18px;
-        color: #959595;
+        color: #bcbcbc;
         pointer-events: none;
         -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
@@ -206,7 +206,7 @@ section.second {
         position: absolute;
         z-index: 1;
         font-size: 18px;
-        color: #959595;
+        color: #bcbcbc;
         right: 10px;
         top: 10px; }
     section.second form .btn {
@@ -244,6 +244,84 @@ section.second {
   margin-top: 10px;
   font-size: 16px;
   color: #5e5e5e; }
+
+.reviews {
+  background: url("../img/reviews-bg.png") top center/cover;
+  background-repeat: repeat-x;
+  background-attachment: fixed;
+  padding-top: 55px; }
+  .reviews h1 {
+    text-align: center;
+    color: white; }
+  .reviews .carousel {
+    position: relative; }
+    .reviews .carousel .slide {
+      display: block;
+      max-width: 558px;
+      padding: 60px;
+      background: white;
+      border-radius: 10px;
+      margin: 80px auto 107px auto;
+      text-align: center;
+      position: relative;
+      -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); }
+      .reviews .carousel .slide .quote {
+        color: #ff9500;
+        font-size: 180px;
+        font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+        position: absolute;
+        top: -80px;
+        right: calc(50% - 32px); }
+      .reviews .carousel .slide p {
+        font-family: "Georgia", "Cambria", "Times New Roman", "Times", serif;
+        font-style: italic;
+        font-size: 18px;
+        color: #5f5f5f;
+        margin: 0; }
+        .reviews .carousel .slide p:after {
+          content: "";
+          display: block;
+          width: 80px;
+          height: 1px;
+          margin: 28px auto 24px auto;
+          background: #c2c2c2; }
+      .reviews .carousel .slide h5 {
+        font-size: 20px;
+        color: #5f5f5f;
+        font-weight: 400;
+        margin: 0; }
+      .reviews .carousel .slide .userpic img {
+        height: 104px;
+        width: 104px;
+        border-radius: 100px;
+        border: 5px solid rgba(255, 255, 255, 0.05);
+        position: absolute;
+        right: calc(50% - 52px);
+        bottom: -52px; }
+    .reviews .carousel .owl-controls .owl-nav {
+      position: absolute;
+      width: 760px;
+      right: calc(50% - 380px);
+      top: 225px; }
+      .reviews .carousel .owl-controls .owl-nav .owl-prev, .reviews .carousel .owl-controls .owl-nav .owl-next {
+        width: 33px;
+        height: 33px;
+        opacity: 0.1;
+        background: url(../img/arrow.svg);
+        transition: all 0.1s ease-in-out; }
+        .reviews .carousel .owl-controls .owl-nav .owl-prev:hover, .reviews .carousel .owl-controls .owl-nav .owl-next:hover {
+          opacity: 0.3; }
+      .reviews .carousel .owl-controls .owl-nav .owl-prev {
+        transform: rotate(-45deg);
+        float: left; }
+      .reviews .carousel .owl-controls .owl-nav .owl-next {
+        transform: rotate(135deg);
+        float: right; }
+
+.cta {
+  height: 500px; }
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {

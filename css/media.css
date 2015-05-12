@@ -12,6 +12,12 @@
 	/* section.second .container .row .col-md-8 .text{
 		max-width: 344px;
 	}*/
+	header {
+		background: url("../img/header-bg.png") top left/cover;
+	}
+	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn {
+		margin: auto;
+	}
 	section.second .container .row form {
 		max-width: 350px;
 		margin: auto;
@@ -45,9 +51,6 @@
 	.heading h2 {
 		font-size: 22px;
 		text-align: center;
-	}
-	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn {
-		margin: auto;
 	}
 	section.second .container .row form {
 		max-width: 350px;

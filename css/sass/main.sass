@@ -1,0 +1,385 @@
+@import "bourbon/bourbon"
+
+$dark-grey: #333
+$orange: #ff9500
+$transition: all 0.10s ease-in-out
+
+body
+	font-family: "Open Sans ", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+h1
+	font-size: 40px
+	margin: 0
+h2
+	font-size: 24px
+	font-weight: 300
+
+header
+	min-height: 100px
+	padding-bottom: 60px
+	background: url('../img/header-bg.png') top right / cover
+	color: white
+
+.top-line
+	margin-top: 40px
+
+.logo
+	font-size: 24px
+	font-weight: 600
+
+.phone
+	text-align: right
+
+.phone .wrapper .tabs :nth-child(2)
+	margin-left: 5px
+
+.phone .wrapper .tabs .tab
+	color: rgba(255,255,255,0.7)  
+	border-bottom: 1px dashed rgba(255,255,255,0.7) 
+	cursor: pointer
+
+.phone .wrapper .tabs .active
+	color: white
+	border-bottom: none
+	cursor: auto
+
+.phone .wrapper .tab_content .tab_item 
+	display: none
+	font-size: 24px
+	font-weight: 600
+ 
+.phone .wrapper .tab_content .tab_item:first-child
+	display: block	
+
+.heading
+	margin-top: 20px
+
+.heading h1, .heading h2
+	margin: 0
+
+.offers-cta
+	margin-top: 45px
+
+	.col-md-12
+
+		.wrapper
+			width: 450px
+			position: relative
+
+			.tabs 
+
+				.tab
+					position: relative
+					display: inline-block
+					width: 50%
+					height: 100px
+					color: #4a4a4a
+					text-align: center
+					line-height: 45px
+					font-size: 16px
+					cursor: pointer
+
+					&.active
+						background: white
+						border-radius: 10px
+						text-align: center
+						line-height: 45px
+						font-size: 16px
+						cursor: auto
+
+						&::before 
+							content: ''
+							position: absolute 
+							left: 0
+							top: 44px
+							display: inline-block
+							width: 100%
+							height: 1px 
+							background: #ebebeb
+							z-index: 1
+
+						p 
+							border-bottom: none
+
+							&:hover
+								border: none
+
+					p
+						border-bottom: 1px dashed rgba(0,0,0,.1)
+						display: inline
+						+transition(all 0.10s ease-in-out)
+
+						&:hover
+							border-bottom: 1px dashed #4a4a4a
+							
+
+			.tab_content 
+				display: block
+				position: absolute
+				top: 45px
+				width: 450px
+				padding: 30px 30px
+				background: white
+				border-radius: 10px
+
+				.tab_item
+
+					p 
+						margin: 0 0 28px 0
+						color: #4a4a4a
+						font-size: 18px
+						position: relative
+						margin-left: 40px
+
+					.li_calendar:before, .li_bubble:before, .li_lab:before, .li_pen:before, .li_bulb:before, .li_clip:before
+						position: absolute
+						top: 3px
+						left: -35px
+						font-size: 22px
+						color: #959595
+
+					.btn 
+						display: block
+						width: 240px
+						height: 52px
+						border-radius: 5px
+						background: #ff9500
+						color: white
+						font-size: 18px
+						font-weight: 600
+						line-height: 52px
+						text-align: center
+						+transition(all 0.10s ease-in-out)
+
+						&:hover
+							text-decoration: none 
+							background: #ffa423
+
+		.myclearfix
+			display: block
+			height: 430px
+			text-indent: -9999px
+
+section.second
+	padding: 55px 0
+
+	h1
+		text-align: center
+		color: #5e5e5e
+		margin-bottom: 50px
+
+
+	form
+		background: #f4f4f4
+		width: 100%
+		padding: 30px 
+		border-radius: 10px
+
+		h5
+			margin: 0 0 30px 0
+			font-size: 22px 
+			font-weight: 400
+			color: #5e5e5e
+			line-height: 20px
+
+		input
+			border: none
+			outline: none
+			width: 100%
+			height: 44px
+			border-radius: 5px
+			font-size: 18px
+			padding: 10px
+			position: relative
+			+transition(all 0.10s ease-in-out)
+
+			&:focus
+				box-shadow: #67bc5c 0 0 0 2px
+				border-radius: 5px
+
+			&::-webkit-input-placeholder
+				font-weight: 400
+
+			&:-moz-placeholder
+				font-weight: 400
+
+			&:focus + label,
+			&.has-value + label
+				top: -18px
+				left: 0
+				font-size: 12px
+
+			&.is-active + label
+				color: #67bc5c
+
+		.input-group
+			margin-bottom: 30px
+			position: relative
+			text-align: left 
+
+			label
+				+position(absolute, calc(50% - 13px) 0 0 10px)
+				font-size: 18px
+				color: #bcbcbc
+				pointer-events: none
+				+transition(all 0.10s ease-in-out)
+
+			i 
+				position: absolute
+				z-index: 1
+				font-size: 18px
+				color: #bcbcbc
+				right: 10px
+				top: 10px
+
+		.btn 
+			background: #ff9500
+			color: white
+			font-size: 18px
+			font-weight: 600
+			height: 52px
+			line-height: 32px
+			margin: 0
+			+transition(all 0.10s ease-in-out)
+
+			&:hover
+				text-decoration: none 
+				background: #ffa423
+
+			&:focus
+				box-shadow: none
+
+.profy-item
+	margin-bottom: 40px
+
+.profy-left
+
+	i
+		font-size: 50px
+		color: #ff9500
+		margin-left: 40px
+
+.profy-right
+	
+	h4
+		display: inline-block
+		margin: 0
+		font-size: 24px
+		font-weight: 400
+		color: #5e5e5e
+
+	p
+		margin-top: 10px
+		font-size: 16px
+		color: #5e5e5e
+
+.reviews
+	background: url('../img/reviews-bg.png') top center / cover
+	background-repeat: repeat-x
+	background-attachment: fixed
+	padding-top: 55px
+
+	h1
+		text-align: center
+		color: white
+
+	.carousel
+		position: relative
+
+		.slide
+			display: block
+			max-width: 558px
+			padding: 60px 
+			background: white
+			border-radius: 10px
+			margin: 80px auto 107px auto 
+			text-align: center
+			position: relative
+			-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1)
+			-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1)
+			box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1)
+
+			.quote 
+				color: #ff9500
+				font-size: 180px
+				font-family: $georgia
+				position: absolute
+				top: -80px
+				right: calc(50% - 32px)
+
+			p 
+				font-family: $georgia
+				font-style: italic
+				font-size: 18px 
+				color: #5f5f5f
+				margin: 0
+
+				&:after 
+					content: ""
+					display: block
+					width: 80px
+					height: 1px
+					margin: 28px auto 24px auto
+					background: #c2c2c2
+
+			h5
+				font-size: 20px 
+				color: #5f5f5f
+				font-weight: 400
+				margin: 0
+			
+			.userpic
+				
+				img 
+					+size(104px 104px)
+					border-radius: 100px
+					border: 5px solid rgba(255,255,255,0.05)
+					position: absolute 
+					right: calc(50% - 52px)
+					bottom: -52px
+			
+		.owl-controls
+
+			.owl-nav
+				position: absolute
+				width: 760px
+				right: calc(50% - 380px)
+				top: 225px
+
+
+				.owl-prev, .owl-next
+					width: 33px
+					height: 33px
+					opacity: 0.1
+					background: url(../img/arrow.svg) 
+					transition: ($transition)
+
+					&:hover
+						opacity: 0.3
+
+				.owl-prev
+					transform: rotate(-45deg)
+					float: left
+
+				.owl-next
+					transform: rotate(135deg)
+					float: right
+
+.cta
+	height: 500px
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+.hidden
+	display: none

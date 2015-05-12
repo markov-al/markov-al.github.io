@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+	$.stellar({
+		responsive: true,
+		horizontalOffset: 60
+	});
+
+	$(".carousel").owlCarousel({
+		loop:true,
+		items:1,
+		nav:true
+	});
+
+	$(".owl-prev, .owl-next").html("")
+
 	$(".phone .tab_item").not(":first").hide();
 	$(".phone .wrapper .tab").click(function() {
 		$(".phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
