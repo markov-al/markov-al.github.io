@@ -20,7 +20,7 @@
 	}
 	section.second .container .row form {
 		max-width: 350px;
-		margin: auto;
+		margin: 0 auto 55px auto;
 	}
 	.profy-left i {
 		margin-left: 40px;
