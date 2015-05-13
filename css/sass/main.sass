@@ -2,7 +2,7 @@
 
 $dark-grey: #333
 $orange: #ff9500
-$transition: all 0.10s ease-in-out
+$transition: all 0.2s ease
 
 body
 	font-family: "Open Sans ", sans-serif
@@ -153,7 +153,7 @@ header
 						color: white
 						font-size: 18px
 						font-weight: 600
-						line-height: 52px
+						line-height: 50px
 						text-align: center
 						+transition(all 0.10s ease-in-out)
 
@@ -167,7 +167,7 @@ header
 			text-indent: -9999px
 
 section.second
-	padding: 55px 0
+	padding-top: 55px 
 
 	h1
 		text-align: center
@@ -180,6 +180,7 @@ section.second
 		width: 100%
 		padding: 30px 
 		border-radius: 10px
+		margin-bottom: 55px 
 
 		h5
 			margin: 0 0 30px 0
@@ -228,7 +229,7 @@ section.second
 				font-size: 18px
 				color: #bcbcbc
 				pointer-events: none
-				+transition(all 0.10s ease-in-out)
+				transition: ($transition)
 
 			i 
 				position: absolute
@@ -244,7 +245,7 @@ section.second
 			font-size: 18px
 			font-weight: 600
 			height: 52px
-			line-height: 32px
+			line-height: 30px
 			margin: 0
 			+transition(all 0.10s ease-in-out)
 
@@ -257,6 +258,9 @@ section.second
 
 .profy-item
 	margin-bottom: 40px
+
+	&.last 
+		margin-bottom: 55px
 
 .profy-left
 
@@ -356,30 +360,134 @@ section.second
 				.owl-prev, .owl-next
 					width: 33px
 					height: 33px
-					opacity: 0.1
+					opacity: 0.2
 					background: url(../img/arrow.svg) 
 					transition: ($transition)
 
 					&:hover
-						opacity: 0.3
+						opacity: 0.4
 
 				.owl-prev
 					transform: rotate(-45deg)
+					-webkit-transform: rotate(-45deg)
 					float: left
 
 				.owl-next
 					transform: rotate(135deg)
+					-webkit-transform: rotate(135deg)
 					float: right
 
 .cta
-	height: 500px
+	text-align: center
+	padding: 55px 0
+	border-bottom: 1px solid #e1e1e1
+	
+	h4
+		font-size: 24px
+		font-weight: normal
+		margin: 0 0 30px 0
+		color: #5e5e5e
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: red
-body input:required:valid,
-body textarea:required:valid
-	color: green
+	.btn
+		display: block
+		width: 240px
+		height: 52px
+		margin: auto
+		border-radius: 5px
+		background: #ff9500
+		color: white
+		font-size: 18px
+		font-weight: 600
+		line-height: 50px
+		text-align: center
+		+transition(all 0.10s ease-in-out)
+
+		&:hover
+			text-decoration: none 
+			background: #ffa423
+
+.location
+	padding-top: 55px
+
+	h1
+		text-align: center
+		color: #5e5e5e
+		line-height: 1
+		margin: 0
+		margin-bottom: 30px
+
+	.tabs
+		display: block
+		margin: 0 auto 30px auto
+		width: 210px
+
+		.tab 
+			width: 105px
+			display: inline-block
+			text-align: center
+			padding: 12px 0
+			line-height: 16px
+			font-size: 16px
+			float: left
+			cursor: pointer
+			transition: ($transition)
+
+			&.active 
+				cursor: auto
+				background: #555555
+				color: white
+
+				&:hover
+					background: #555555
+
+			&:hover
+				background: #ebebeb
+
+		.left 
+			border: 1px solid #555555
+			border-top-left-radius: 5px
+			border-bottom-left-radius: 5px
+
+		.right
+			border: 1px solid #555555
+			border-top-right-radius: 5px
+			border-bottom-right-radius: 5px
+
+		.tab_content
+			display: block
+
+
+footer
+	padding: 40px 0
+
+	.footer-phone
+		text-align: right
+
+		.tabs 
+
+			.tab
+				color: #555555
+				border-bottom: 1px dashed #555555
+				cursor: pointer
+
+				&.active 
+					border-bottom: none
+					cursor: auto
+
+			.first
+				margin-right: 5px
+
+
+		.tab_content
+
+			.tab_item
+				color: #555555
+				display: none
+				font-size: 24px
+				font-weight: 600
+
+				&:first-child
+					display: block	
 
 .hidden
 	display: none

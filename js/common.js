@@ -25,6 +25,18 @@ $(document).ready(function() {
 		$(".offers-cta .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 
+	$(".location .tab_item").not(":first").hide();
+	$(".location .wrapper .tab").click(function() {
+		$(".location .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".location .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
+	$(".footer-phone .tab_item").not(":first").hide();
+	$(".footer-phone .wrapper .tab").click(function() {
+		$(".footer-phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+		$(".footer-phone .tab_item").hide().eq($(this).index()).fadeIn()
+	}).eq(0).addClass("active");
+
 	$(function(){
 		$(".second form .input-group input").focusout(function(){
 			var text_val = $(this).val();
