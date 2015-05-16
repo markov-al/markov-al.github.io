@@ -1,6 +1,9 @@
 body {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: 0.3px; }
+  letter-spacing: 0.3px;
+  position: relative; }
+  body.overflow {
+    overflow: hidden; }
 
 header {
   display: block;
@@ -16,8 +19,22 @@ header {
       color: rgba(255, 255, 255, 0.5);
       font-size: 24px;
       font-weight: normal; }
+    header .heading .icon-menu {
+      float: right;
+      width: 30px;
+      height: 30px;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 24px;
+      -webkit-transition: all 0.2s ease;
+              transition: all 0.2s ease;
+      display: none; }
+      header .heading .icon-menu:hover {
+        color: rgba(255, 255, 255, 0.8);
+        cursor: pointer; }
     header .heading .nav {
       text-align: right; }
+      header .heading .nav .icon-cancel {
+        display: none; }
       header .heading .nav a {
         display: inline-block;
         margin-top: 10px;
@@ -192,6 +209,34 @@ header {
 @media only screen and (max-width: 768px) {
   header {
     max-height: 950px; }
+    header .heading .icon-menu {
+      display: block; }
+    header .heading .nav {
+      text-align: left;
+      width: 200px;
+      height: 100vh;
+      background: black;
+      position: fixed;
+      z-index: 3;
+      top: 0;
+      right: -200px; }
+      header .heading .nav .icon-cancel {
+        display: block;
+        cursor: pointer;
+        height: 63px;
+        padding: 20px 0 0 50px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 22px;
+        -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease; }
+        header .heading .nav .icon-cancel:hover {
+          color: white; }
+      header .heading .nav a {
+        display: block;
+        margin: 15px 0 0 55px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
     header .hero .wrap .text {
       float: none;
       margin: auto;
