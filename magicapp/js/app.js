@@ -10,7 +10,7 @@ $(document).ready(function() {
 
 
 	});
-	$("..icon-cancel").click(function() {
+	$(".icon-cancel").click(function() {
 		$('.nav').animate({
 	      right: "-200px"
 	    }, 200);
