@@ -1,0 +1,211 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.3px; }
+
+header {
+  display: block;
+  min-height: 660px;
+  background: url(http://i.imgur.com/cx0IVVG.jpg) center/cover;
+  padding-top: 20px;
+  overflow: hidden; }
+  header .heading {
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    header .heading .logo {
+      text-align: left;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 24px;
+      font-weight: normal; }
+    header .heading .nav {
+      text-align: right; }
+      header .heading .nav a {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+        margin-left: 40px;
+        -webkit-transition: all 0.2s ease;
+                transition: all 0.2s ease; }
+        header .heading .nav a:hover {
+          text-decoration: none;
+          color: rgba(255, 255, 255, 0.8); }
+  header .hero {
+    margin: 50px 0 0 0;
+    padding: 0 80px; }
+    header .hero .wrap {
+      max-width: 780px;
+      margin: auto;
+      position: relative; }
+      header .hero .wrap .text {
+        margin-top: 100px;
+        max-width: 360px;
+        float: left; }
+        header .hero .wrap .text h1 {
+          font-size: 36px;
+          color: white;
+          font-weight: normal;
+          margin: 0 0 40px 0; }
+        header .hero .wrap .text h3 {
+          font-family: "Myriad Pro", sans-serif;
+          font-size: 24px;
+          color: #e5e5e5;
+          font-weight: normal; }
+        header .hero .wrap .text .btn {
+          cursor: pointer;
+          display: block;
+          margin: 40px 0 0 0;
+          color: white;
+          font-size: 24px;
+          text-transform: uppercase;
+          height: 70px;
+          width: 280px;
+          border-radius: 10px;
+          background: rgba(255, 255, 255, 0.1);
+          -webkit-transition: all 0.2s ease;
+                  transition: all 0.2s ease; }
+          header .hero .wrap .text .btn span {
+            letter-spacing: 0.05em;
+            position: relative;
+            display: inline-block;
+            width: 215px;
+            margin-left: 25px;
+            margin-top: 16px;
+            text-align: right; }
+          header .hero .wrap .text .btn .icon-mobile:before {
+            font-size: 40px;
+            position: absolute;
+            left: 0;
+            top: -2px; }
+          header .hero .wrap .text .btn:hover {
+            background: rgba(255, 255, 255, 0.3); }
+      header .hero .wrap .iPhone {
+        background: url(http://i61.tinypic.com/4kylt.png) top;
+        height: 530px;
+        width: 320px;
+        float: right;
+        margin-top: 18px;
+        background-repeat: no-repeat; }
+
+.features {
+  padding: 82px 0; }
+  .features h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: #424141;
+    margin: 0; }
+    .features h3 strong {
+      color: #c58e77; }
+    .features h3:after {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 2px;
+      margin: 22px auto 30px auto;
+      background: #acacac; }
+  .features .item-wrap {
+    padding: 0 25px; }
+    .features .item-wrap .icon-cloud:before, .features .item-wrap .icon-globe:before, .features .item-wrap .icon-doc:before {
+      margin: auto;
+      display: block;
+      height: 145px;
+      width: 145px;
+      font-size: 55px;
+      line-height: 145px;
+      color: #c58e77;
+      background: #ebebeb;
+      border-radius: 100px; }
+    .features .item-wrap h5 {
+      margin: 32px 0 22px 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+      color: #c58e77;
+      letter-spacing: 0.1em; }
+    .features .item-wrap p {
+      margin: 0;
+      text-align: center;
+      color: #6a6a6a;
+      font-size: 16px;
+      line-height: 30px; }
+
+.demo {
+  padding: 82px 0;
+  background: #f3f3f3; }
+  .demo h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    color: #515151;
+    margin: 0; }
+    .demo h3:after {
+      content: "";
+      display: block;
+      width: 180px;
+      height: 2px;
+      margin: 22px 0 25px 0;
+      background: #acacac; }
+  .demo p {
+    margin: 0;
+    color: #6a6a6a;
+    font-size: 16px;
+    line-height: 30px; }
+  .demo .btn {
+    cursor: pointer;
+    display: block;
+    margin: 25px 0 0 0;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    height: 60px;
+    width: 218px;
+    border-radius: 10px;
+    background: #c58e77;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease; }
+    .demo .btn span {
+      position: relative;
+      display: inline-block;
+      width: 155px;
+      margin-left: 26px;
+      margin-top: 16px;
+      text-align: right;
+      letter-spacing: 0.05em; }
+    .demo .btn .icon-mobile:before {
+      font-size: 26px;
+      position: absolute;
+      left: 0;
+      top: 0; }
+    .demo .btn:hover {
+      background: #db9e84; }
+
+@media only screen and (max-width: 992px) {
+  header .hero {
+    padding: 0; }
+
+  .features .item-wrap {
+    padding: 0 10px; } }
+@media only screen and (max-width: 768px) {
+  header {
+    max-height: 950px; }
+    header .hero .wrap .text {
+      float: none;
+      margin: auto;
+      text-align: center; }
+      header .hero .wrap .text .btn {
+        margin: 40px auto 0 auto; }
+        header .hero .wrap .text .btn span {
+          margin: 16px 10px 0 0; }
+    header .hero .wrap .iPhone {
+      float: none;
+      margin: 50px auto 0 auto; }
+
+  .features {
+    padding: 82px 0 32px 0; }
+    .features .item-wrap {
+      padding: 0 150px;
+      margin-bottom: 50px; } }
