@@ -1,23 +1,29 @@
 $(document).ready(function() {
 
-	$.stellar({
-		responsive: true,
-		horizontalOffset: 60
-	});
-
 	$(".carousel").owlCarousel({
 		loop:true,
 		items:1,
-		nav:true
+		margin:30,
+		nav:true,
+		autoplay:true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true
 	});
 
 	$(".owl-prev, .owl-next").html("")
 
-	$(".phone .tab_item").not(":first").hide();
-	$(".phone .wrapper .tab").click(function() {
-		$(".phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".phone .tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active");
+	$('.phone .tab.second').click(function(){
+		$('.phone .tab.first').removeClass('active');
+		$(this).addClass('active');
+		$('.phone .tab_item.first').hide();
+		$('.phone .tab_item.second').fadeIn();
+	});
+	$('.phone .tab.first').click(function(){
+		$('.phone .tab.second').removeClass('active');
+		$(this).addClass('active');
+		$('.phone .tab_item.second').hide();
+		$('.phone .tab_item.first').fadeIn();
+	});
 
 	$(".offers-cta .tab_item").not(":first").hide();
 	$(".offers-cta .wrapper .tab").click(function() {
@@ -31,11 +37,18 @@ $(document).ready(function() {
 		$(".location .tab_item").hide().eq($(this).index()).fadeIn()
 	}).eq(0).addClass("active");
 
-	$(".footer-phone .tab_item").not(":first").hide();
-	$(".footer-phone .wrapper .tab").click(function() {
-		$(".footer-phone .wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
-		$(".footer-phone .tab_item").hide().eq($(this).index()).fadeIn()
-	}).eq(0).addClass("active");
+	$('.footer-phone .tab.second').click(function(){
+		$('.footer-phone .tab.first').removeClass('active');
+		$(this).addClass('active');
+		$('.footer-phone .tab_item.first').hide();
+		$('.footer-phone .tab_item.second').fadeIn();
+	});
+	$('.footer-phone .tab.first').click(function(){
+		$('.footer-phone .tab.second').removeClass('active');
+		$(this).addClass('active');
+		$('.footer-phone .tab_item.second').hide();
+		$('.footer-phone .tab_item.first').fadeIn();
+	});
 
 	$(function(){
 		$(".second form .input-group input").focusout(function(){
@@ -84,5 +97,5 @@ $(document).ready(function() {
 			}, 1000);
 		});
 	});
-	
+
 });

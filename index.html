@@ -21,16 +21,16 @@
 
 </head>
 <body>
-	
+
 	<div class="hidden"></div>
- 
+
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
-	<script src="libs/html5shiv/html5shiv.min.js"></script> 
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	
+
 	<header class="clearfix" >
 		<div class="container">
 			<div class="row">
@@ -42,12 +42,12 @@
 						<div class="phone clearfix">
 							<div class="wrapper">
 								<div class="tabs">
-									<span class="tab">Москва</span> 
-									<span class="tab">Петербург</span>
+									<span class="tab first"><span>Петербург</span></span>
+									<span class="tab second active"><span>Москва</span></span>
 								</div>
 								<div class="tab_content">
-									<div class="tab_item">+4 (777) 555-55-55</div>
-									<div class="tab_item">+7 (999) 999-99-99</div>
+									<div class="tab_item first">+4 (777) 555-55-55</div>
+									<div class="tab_item second">+7 (999) 999-99-99</div>
 								</div>
 							</div>
 						</div>
@@ -65,15 +65,15 @@
 					<div class="col-md-12">
 						<div class="wrapper clearfix">
 							<div class="tabs">
-								<span class="tab active" style="float: left"><p>Полный курс</p></span> 
-								<span class="tab" style="float: right"><p>Ускоренный</p></span>
+								<span class="tab active" style="float: left"><p>Полный курс</p></span>
+								<span class="tab" style="float: right"><p class="li_paperplane">Ускоренный</p></span>
 							</div>
 							<div class="tab_content">
 								<div class="tab_item">
 									<p class="li_pen">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 									<p class="li_bulb">Voluptatem dolore culpa neque consequuntur accusamus laudantium.</p>
 									<p class="li_clip">Ad iusto dicta ut deleniti voluptatem autem, sint culpa saepe similique tenetur odit at, officiis distinctio.</p>
-									<a href="magicapp/magic.html" class="btn">Начать обучение</a> 
+									<a href="#" class="btn">Начать обучение</a>
 								</div>
 								<div class="tab_item">
 									<p class="li_calendar">2 занятия в неделю: лекция и практическое</p>
@@ -184,22 +184,11 @@
 		</div>
 	</section>
 
-	<section class="cta">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<h4>Повышение знаний с ProKurs — это оптимальное <br> сочетание интенсива и углубленного подхода.</h4>
-					<a href="#" class="btn">Отправить заявку</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<section class="location">
 		<h1>Как нас найти</h1>
 		<div class="wrapper">
 			<div class="tabs clearfix">
-				<span class="tab left">Москва</span> 
+				<span class="tab left">Москва</span>
 				<span class="tab right">Петербург</span>
 			</div>
 			<div class="tab_content">
@@ -212,23 +201,35 @@
 			</div>
 		</div>
 	</section>
-	
+
+	<section class="cta">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>Повышение знаний с ProKurs — это оптимальное <br> сочетание интенсива и углубленного подхода.</h4>
+					<a href="#" class="btn">Отправить заявку</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="logo">EnglishSchool</div>
+					<em>Copyright © 2015</em>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="footer-phone clearfix">
 						<div class="wrapper">
 							<div class="tabs">
-								<span class="tab first">Москва</span> 
-								<span class="tab">Петербург</span>
+								<span class="tab first"><span>Петербург</span></span>
+								<span class="tab second active"><span>Москва</span></span>
 							</div>
 							<div class="tab_content">
-								<div class="tab_item">+4 (777) 555-55-55</div>
-								<div class="tab_item">+7 (999) 999-99-99</div>
+								<div class="tab_item first">+4 (777) 555-55-55</div>
+								<div class="tab_item second">+7 (999) 999-99-99</div>
 							</div>
 						</div>
 					</div>
@@ -237,15 +238,14 @@
 		</div>
 	</footer>
 
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
-	<script src="libs/stellar/jquery.stellar.min.js"></script>
 	<script src="libs/owl/owl.carousel.min.js"></script>
-	
+
 	<script src="js/common.js"></script>
 
 	<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 	<!-- Google Analytics counter --><!-- /Google Analytics counter -->
-	
+
 </body>
 </html>

@@ -1,9 +1,20 @@
 /*==========  Desktop First Method  ==========*/
 
+@media only screen and (max-width : 1300px) {
+	header {
+		background-position: top center;
+		background-size: cover;
+	}
+}
+
 /* Large Devices, Wide Scre	ens */
 @media only screen and (max-width : 1200px) {
 	.profy-left i {
 		margin-left: 20px;
+	}
+	header {
+		background-position: top right 70%;
+		background-size: cover;
 	}
 }
 
@@ -13,7 +24,8 @@
 		max-width: 344px;
 	}*/
 	header {
-		background: url("../img/header-bg.png") top left/cover;
+		background-position: top left;
+		background-size: cover;
 	}
 	.offers-cta .col-md-12 .wrapper, .offers-cta .col-md-12 .wrapper .tab_content .tab_item .btn {
 		margin: auto;
@@ -30,14 +42,14 @@
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	header{
-		min-height: 750px; 
+		min-height: 750px;
 		margin: auto;
 	}
 
 	.logo, .phone {
 		text-align: center;
 	}
-	
+
 	.logo {
 		margin-bottom: 35px;
 	}
@@ -57,6 +69,16 @@
 	}
 	.profy-left i {
 		margin-left: 20px;
+	}
+
+	footer, footer .wrapper{
+		text-align: center;
+	}
+	footer .logo {
+		margin: 0
+	}
+	footer .wrapper {
+		margin-top: 35px;
 	}
 }
 
@@ -84,7 +106,7 @@
 	.offers-cta .col-md-12 .myclearfix {
 		height: 480px;
 	}
-	section.second .container .row form { 
+	section.second .container .row form {
 		width: 100%;
 	}
 	h1 {

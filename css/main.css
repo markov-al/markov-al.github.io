@@ -18,8 +18,8 @@ h2 {
 header {
   min-height: 100px;
   padding-bottom: 60px;
-  background: url("../img/header-bg.png") top right/cover;
-  color: white; }
+  color: white;
+  background: url("../img/header-bg.jpg") top right/cover; }
 
 .top-line {
   margin-top: 40px; }
@@ -31,25 +31,38 @@ header {
 .phone {
   text-align: right; }
 
-.phone .wrapper .tabs :nth-child(2) {
-  margin-left: 5px; }
-
 .phone .wrapper .tabs .tab {
-  color: rgba(255, 255, 255, 0.7);
-  border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
-  cursor: pointer; }
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.9);
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 7px 12px;
+  font-size: 16px; }
+  .phone .wrapper .tabs .tab:hover {
+    background: rgba(255, 255, 255, 0.2); }
+  .phone .wrapper .tabs .tab span {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.6); }
 
 .phone .wrapper .tabs .active {
-  color: white;
+  background: white;
+  color: #777;
   border-bottom: none;
-  cursor: auto; }
+  cursor: auto;
+  pointer-events: none;
+  padding: 7px 12px;
+  margin: 0; }
+  .phone .wrapper .tabs .active:hover {
+    background: white; }
+
+.phone .wrapper .tab_content {
+  margin-top: 5px; }
 
 .phone .wrapper .tab_content .tab_item {
   display: none;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: 600; }
 
-.phone .wrapper .tab_content .tab_item:first-child {
+.phone .wrapper .tab_content :nth-child(2) {
   display: block; }
 
 .heading {
@@ -66,20 +79,30 @@ header {
     .offers-cta .col-md-12 .wrapper .tabs .tab {
       position: relative;
       display: inline-block;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.2);
       width: 50%;
       height: 100px;
       color: #4a4a4a;
       text-align: center;
       line-height: 45px;
       font-size: 16px;
-      cursor: pointer; }
+      cursor: pointer;
+      -webkit-transition: all 0.1s ease-in-out;
+      -moz-transition: all 0.1s ease-in-out;
+      transition: all 0.1s ease-in-out; }
+      .offers-cta .col-md-12 .wrapper .tabs .tab:hover {
+        background: rgba(255, 255, 255, 0.4); }
       .offers-cta .col-md-12 .wrapper .tabs .tab.active {
         background: white;
-        border-radius: 10px;
         text-align: center;
         line-height: 45px;
         font-size: 16px;
-        cursor: auto; }
+        cursor: auto;
+        border: none;
+        pointer-events: none; }
+        .offers-cta .col-md-12 .wrapper .tabs .tab.active p.li_paperplane:before {
+          display: none; }
         .offers-cta .col-md-12 .wrapper .tabs .tab.active::before {
           content: "";
           position: absolute;
@@ -90,18 +113,8 @@ header {
           height: 1px;
           background: #ebebeb;
           z-index: 1; }
-        .offers-cta .col-md-12 .wrapper .tabs .tab.active p {
-          border-bottom: none; }
-          .offers-cta .col-md-12 .wrapper .tabs .tab.active p:hover {
-            border: none; }
       .offers-cta .col-md-12 .wrapper .tabs .tab p {
-        border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
-        display: inline;
-        -webkit-transition: all 0.1s ease-in-out;
-        -moz-transition: all 0.1s ease-in-out;
-        transition: all 0.1s ease-in-out; }
-        .offers-cta .col-md-12 .wrapper .tabs .tab p:hover {
-          border-bottom: 1px dashed #4a4a4a; }
+        display: inline; }
     .offers-cta .col-md-12 .wrapper .tab_content {
       display: block;
       position: absolute;
@@ -352,7 +365,8 @@ section.second {
       background: #ffa423; }
 
 .location {
-  padding-top: 55px; }
+  padding-top: 55px;
+  height: 697px; }
   .location h1 {
     text-align: center;
     color: #5e5e5e;
@@ -389,29 +403,48 @@ section.second {
       border: 1px solid #555555;
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px; }
-    .location .tabs .tab_content {
-      display: block; }
+  .location .tab_content {
+    display: block; }
 
 footer {
   padding: 40px 0; }
+  footer .logo {
+    color: grey; }
+  footer em {
+    color: #999; }
   footer .footer-phone {
     text-align: right; }
     footer .footer-phone .tabs .tab {
-      color: #555555;
-      border-bottom: 1px dashed #555555;
-      cursor: pointer; }
-      footer .footer-phone .tabs .tab.active {
-        border-bottom: none;
-        cursor: auto; }
-    footer .footer-phone .tabs .first {
-      margin-right: 5px; }
+      font-size: 16px;
+      color: grey;
+      cursor: pointer;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 3px; }
+      footer .footer-phone .tabs .tab span {
+        border-bottom: 1px dashed rgba(1, 1, 1, 0.6); }
+      footer .footer-phone .tabs .tab:hover {
+        background: rgba(0, 0, 0, 0.1); }
+    footer .footer-phone .tabs .active {
+      background: grey;
+      color: white;
+      cursor: auto;
+      pointer-events: none;
+      padding: 5px 10px;
+      margin: 0; }
+      footer .footer-phone .tabs .active span {
+        border-bottom: none; }
+      footer .footer-phone .tabs .active:hover {
+        background: grey; }
+    footer .footer-phone .tab_content {
+      margin-top: 5px; }
     footer .footer-phone .tab_content .tab_item {
-      color: #555555;
       display: none;
       font-size: 24px;
-      font-weight: 600; }
-      footer .footer-phone .tab_content .tab_item:first-child {
-        display: block; }
+      font-weight: 600;
+      color: grey; }
+    footer .footer-phone .tab_content :nth-child(2) {
+      display: block; }
 
 .hidden {
   display: none; }

@@ -121,6 +121,7 @@
 }
 .li_paperplane:before {
 	content: "\e01e";
+	margin-right: 8px;
 }
 .li_params:before {
 	content: "\e01f";
